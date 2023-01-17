@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+.section {
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    width: 360px;
+    padding: 10px;
+    background-color:lightgray;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(0, 0, 0, 0.14),
+        0px 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+}
+
+.label{
+    font-weight: 700;
+    font-size: medium;
+
+}
+
+.percentage {
+    display: inline-block;
+    font-weight: 700;
+    font-size: medium;
+}
+

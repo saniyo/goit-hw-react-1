@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './User.module.css';
+import css from './Profile.module.css';
 
 import {
   UserCardContainer,
