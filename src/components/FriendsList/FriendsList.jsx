@@ -25,3 +25,17 @@ export const FriendsList = ({items}) => {
     </UserCardContainer>
     )
  };
+
+ FriendsList.defaultProps = {
+    items: [],
+ }
+
+ FriendsList.propTypes = {
+    items: PropTypes.shape({
+        avatar: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        id: PropTypes.string.isRequired,
+    }
+    )
+ }
