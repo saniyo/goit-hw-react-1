@@ -17,8 +17,11 @@ export const UserCardContainer = styled.ul`
 
 export const UserStatsItem = styled.li`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+
+  
   gap: 5px;
   flex-basis: calc((100% - 10px) / 3);
   padding: 15px;
@@ -26,13 +29,16 @@ export const UserStatsItem = styled.li`
 `;
 
 export const UserSpanStats = styled.span`
-  font-weight: bold;
+  display: block;
   color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: ${props => props.isOnline ? "green" : "red"};
 `;
 
 export const UserImg = styled.img`
   width: 119px;
-  margin-bottom: 30px;
 `;
 
 export const UserName = styled.p`

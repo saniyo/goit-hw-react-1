@@ -2,9 +2,26 @@ import PropTypes from 'prop-types';
 
 import {
   UserCardContainer,
-  UserDescription,
   UserStatsItem,
   UserSpanStats,
   UserImg,            
   UserName,
-} from './friendlist.styled';
+} from './FriendsList.styled';
+
+export const FriendsList = ({items}) => {
+    const elements = items.map(({avatar, name, isOnline, id}) => {
+        return (
+        <UserStatsItem key={id}>
+            <UserSpanStats isOnline={isOnline}></UserSpanStats>
+            <UserImg src={avatar} alt="user ava"/>
+            <UserName>{name}</UserName>
+        </UserStatsItem>
+        )
+    });
+
+    return (
+    <UserCardContainer>
+        {elements}
+    </UserCardContainer>
+    )
+ };
