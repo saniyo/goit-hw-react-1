@@ -31,11 +31,12 @@ export const FriendsList = ({items}) => {
  }
 
  FriendsList.propTypes = {
-    items: PropTypes.shape({
-        avatar: PropTypes.string.isRequired,
-        name: PropTypes.string.isRequired,
-        isOnline: PropTypes.bool.isRequired,
-        id: PropTypes.string.isRequired,
-    }
+     items: PropTypes.arrayOf(
+        PropTypes.shape({
+            avatar: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            isOnline: PropTypes.bool.isRequired,
+            id: PropTypes.number.isRequired,
+        })
     )
  }
