@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/saniyo/goit-hw-react-1/static/css/main.71cc4f76.css",
+    "main.js": "/saniyo/goit-hw-react-1/static/js/main.4f180839.js",
+    "index.html": "/saniyo/goit-hw-react-1/index.html",
+    "main.71cc4f76.css.map": "/saniyo/goit-hw-react-1/static/css/main.71cc4f76.css.map",
+    "main.4f180839.js.map": "/saniyo/goit-hw-react-1/static/js/main.4f180839.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71cc4f76.css",
+    "static/js/main.4f180839.js"
+  ]
+}
