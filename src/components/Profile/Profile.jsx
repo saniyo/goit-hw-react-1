@@ -20,6 +20,7 @@ export const User = ({
     stats: { followers, views, likes },
   },
 }) => {
+  {css};
   return (
     <>
       <UserCardContainer>
