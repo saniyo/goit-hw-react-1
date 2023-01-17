@@ -20,9 +20,9 @@ Statistics.propTypes = {
   title: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
-      label: PropTypes.string,
-      percetage: PropTypes.number,
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percetage: PropTypes.number.isRequired,
     }).isRequired
   ),
 };
