@@ -50,4 +50,7 @@ export const StatItem = ({ label, percentage }) => {
   );
 };
 
-StatItem.propTypes = { label: PropTypes.string, percentage: PropTypes.number };
+StatItem.propTypes = { 
+  label: PropTypes.string.isRequired, 
+  percentage: PropTypes.number.isRequired,
+ };

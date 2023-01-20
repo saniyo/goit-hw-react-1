@@ -19,12 +19,12 @@ Statistics.defaultProps = {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percetage: PropTypes.number.isRequired,
-    }).isRequired
-  ),
+    }).isRequired,
+  ).isRequired,
 };
